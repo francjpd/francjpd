@@ -1,0 +1,70 @@
+.cv-main-container{
+	
+
+	background:{
+		//image:image-url("mainBG.jpg");
+		position:0em -5.56em;
+		repeat:no-repeat;
+
+	};
+}
+.cv-main-header{
+
+	position:relative;
+	padding-top:100px;
+
+
+}
+.cv-header-container {
+
+	width:350px;
+	height:10em;
+	//@include text-shadow($cod-gray 0px 0px 15px );
+
+}
+.brand {
+	color: $red;
+	letter-spacing:-0.3em;
+	font-weight:bold;
+	font-family:Arial,Helvetica;
+
+}
+.cv-header-container h1{
+	letter-spacing:-0.6em;
+	font-weight:bold;
+	font-size:3em;
+	line-height:1em;
+}
+.cv-header-container h2{
+	letter-spacing:0.01em;
+	font-size:1em;
+	line-height:0px;
+	padding-left:0.2em;
+}
+
+.cv-col-centered
+{
+	float: none;
+	margin: 0 auto;
+}
+
+.cv-brand-fjp {
+	font-size:2.4em;
+	
+}
+.cv-brand-fsd{
+	font-size: 2em;
+	margin-left:3px;
+}
+.cv-company{
+	max-width:20rem!important;
+	&:hover{
+			cursor:pointer;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+			margin-top: -5px;
+			transition: all 0.2s ease-in-out !important;
+
+		}
+
+}
+

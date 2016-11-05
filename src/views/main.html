@@ -1,0 +1,114 @@
+<div class="cv-main-container"   ng-controller="ResumeCtrl">
+    <div class="cv-main-header">
+     <div class="row">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-lg-offset-5  col-xs-offset-4" >
+        <div data-sr="enter top over 1s and move 50px wait 0.1s" class="logo cv-header-container brand">
+         <h1 ><span class="cv-brand-fjp" >FJP</span></h1>
+         <h2 ><span class="cv-brand-fsd" >|</span> Full stack developer  </h2>
+       </div>
+     </div>
+   </div>
+   <hr>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-lg-offset-5  col-md-offset-4 col-xs-offset-4">
+      <h1>CV<small> <a href="#"><i class="fa fa-file-pdf-o"></i></a> </small> |<small> <a href="#"><i class="fa fa-file-word-o"></i></a></small>  | <a href="#"> <i class="fa fa-linkedin-square "></i></a></h1>
+    </div> 
+  </div>
+  <!-- <input class="form-control input-lg" placeholder="Search" ng-model="technology"/> -->
+
+  <hr>
+  <div class="cv-main-middle" ng-controller="ResumeCtrl" data-sr="enter bottom over 0.5s and wait 0.3s and no reset" >
+      <div class="row">
+        <div class="col-lg-12" >
+          <div class='text-center'>
+            <h1>{{getAboutMe.title}}<br>
+              <small class="text-muted">{{getAboutMe.subtitle}}</small>
+            </h1>
+            <h4>
+             {{getAboutMe.desc}}
+           </h4>
+         </div>
+       </div>
+     </div>
+     <hr>
+     <div class="experience">
+      <div class="row">
+       <div  class="col-lg-4 col-md-6"  ng-repeat="exp in getExperience()"  cv-is-active="{{$index}}">
+          <div class="col-lg-12  ">
+
+            <div class="card cv-company" ng-click="toggleDetails($index)" >
+             <img class="card-img-top " ng-show="exp.image" width="100%" src="{{exp.image}}" alt="Card image cap">
+
+             <h1 class="text-center" ng-show="exp.icon" ><i ng-class="exp.icon" ng-show="exp.icon" ></i></h1>
+
+             <div class="card-block">
+              <h1 class="card-title">{{exp.company}}</h1>
+              <p class="card-text">{{exp.companyDesc}}</p>
+            </div>
+            <div class="card-footer text-center">
+              <a ng-href="{{exp.website}}">Website</a> – {{exp.location}}
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12 cv-animate-show" ng-show="getProjectView()[$index]" >
+          <div class="card "  data-sr="enter bottom over 0.5s and move 50px wait 0.3s">
+            <div class="card-block">
+              <h3 class="card-title">{{exp.role}}</h3>
+              <p class="card-text">{{exp.roleDesc}}</p>
+            </div>
+            <div class="card-footer text-muted text-right">
+              <h3 class="text-center"><small>{{exp  |  time}}</small></h3>
+            </div>
+          </div>
+
+        </div> 
+
+        <div class="col-lg-5  col-md-12 cv-animate-show" ng-show="getProjectView()[$index]" ng-model="technology">
+
+          <div class="row" ng-repeat="project in exp.projects ">
+            <div class="col-lg-12" >
+
+              <div class="card"  data-sr="enter bottom  and move 20px"  >
+                <div class="card-block">
+                  <h5 class="card-title">{{project.title}} – <span class="cv-important-text" >{{project.client}}</span></h5>
+                </div>
+                <div class="card-block">
+                  <span class="card-text" ng-bind-html="project.desc"></span><br>
+
+                </div>
+                <div class="cv-subtitle-text text-right">Technology and Methodologies</div>
+                <ul class="list-group list-group-flush" ng-repeat="technology in project.technology">
+                  <li class="list-group-item">{{technology.name}}</li>
+
+                </ul>
+
+                <div class="card-footer text-muted text-right">
+                  <h3 class="text-center"><small>{{project  |  time}}</small></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="knowledge">
+    <div class="row ">
+      <div class="col-lg-5 col-lg-push-7">
+        <h1 class="text-right">Knowledge & Skills</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="lg-4">
+      <h1> Front-End</h1>
+      </div>
+      <div class="lg-8">
+        <cv-skills rating="5"  name="HTML"></cv-skills>
+      </div>
+    </div>   
+
+  </div>
+  </div>
+</div>
