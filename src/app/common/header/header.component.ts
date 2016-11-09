@@ -1,14 +1,13 @@
 /// <reference types="angular" />
 
-var templateUrl:any  = require('ngtemplate!html!./header.html');
-
+let template:any  = require('ngtemplate!html!./header.html');
 
  export default class HeaderComponent  implements ng.IComponentOptions{
-     public templateUrl:string;
+     public templateUrl:any = template;
 
-     constructor(){
-        this.templateUrl = templateUrl;
-     }
+     static $inject:Array<string> = [''];
+     constructor(){}
+
 
      static getInstance(): ng.IComponentOptions{
          return new HeaderComponent();
