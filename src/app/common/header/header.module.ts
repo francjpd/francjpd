@@ -13,7 +13,7 @@ export default (()=>{
 
     angular
         .module('common')
-        .component('header',new header())
+        .component('header',header.getInstance())
 
 }) ();
 

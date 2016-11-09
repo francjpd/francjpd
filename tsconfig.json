@@ -7,9 +7,10 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": false,
     "allowSyntheticDefaultImports":true,
+    "noImplicitUseStrict":true,
+    
     "noImplicitUseStrict":true,
     "types" : ["angular","jquery","webpack-env","webpack","bootstrap"]
   },

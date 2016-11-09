@@ -1,3 +1,4 @@
 export default function MainConfig($urlRouterProvider:any){
-    $urlRouterProvider.otherwise('/home');
+    
+    $urlRouterProvider.otherwise('/');
 }

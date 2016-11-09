@@ -1,16 +1,13 @@
+/// <reference types="angular" />
+
 import angular = require('angular');
 
 import MainCtrl from './main.controller';
 
+var templateUrl:any = require('ngtemplate!html!./main.html');
+
 export const MainComponent = {
-           template:`
-                    <div class="container">
-                        <header></header>
-                        <div class="main">
-                            <div ui-view></div>
-                        </div>
-                    </div>
-                    `,
+           templateUrl:templateUrl,
             controller:MainCtrl
 
     }
