@@ -3,10 +3,12 @@ import angular = require('angular');
 import MainCtrl from './main.controller';
 
 export const MainComponent = {
-           template:`<app></app>
-                    <header></header>
-                    <div class="main">
-                        <div ui-view></div>
+           template:`
+                    <div class="container">
+                        <header></header>
+                        <div class="main">
+                            <div ui-view></div>
+                        </div>
                     </div>
                     `,
             controller:MainCtrl

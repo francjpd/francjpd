@@ -1,12 +1,19 @@
-import angular = require('angular');
+/// <reference types="webpack" />
+/// <reference types="webpack-env" />
+/// <reference types="angular" />
 
-import {header} from './header.component';
+import angular = require('angular');
+import header from './header.component';
+
+import './header.scss';
 
 export default (()=>{
 
+    
+
     angular
         .module('common')
-        .component('header',header)
+        .component('header',new header())
 
 }) ();
 

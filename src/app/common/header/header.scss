@@ -1,0 +1,65 @@
+@import "../../../sass/base.scss";
+
+header,.header,[header]{
+    .cv-main-header{
+        position:relative;
+        padding-top:100px;
+    }
+    .cv-main {
+        width:350px;
+        height:10em;
+    }
+    .brand {
+        color: $color-red;
+        letter-spacing:-0.3em;
+        font-weight:bold;
+        font-family:Arial,Helvetica;
+
+    }
+    .cv-header h1{
+        font-family: 'Oswald', sans-serif;
+        letter-spacing:-0.6rem;
+        font-size:8rem;
+        line-height:1em;
+    }
+    .cv-header h2{
+        letter-spacing:0.01em;
+        font-size:1em;
+        line-height:0px;
+        padding-left:0.2em;
+    }
+
+    nav {
+	margin-top: 0rem !important;
+	border-radius:0 !important;
+	z-index:999 !important;
+	font-family:fonts(menu);
+	background-color:colors(scaffold) !important;
+	margin-top:0rem!important;
+	margin-left:-15px;
+	margin-right:-15px;
+	.navbar-brand{
+		color:$color-porcelain;
+
+	}
+	.nav-link
+	{
+		color:$color-porcelain;
+		font-size:1.8rem;
+
+
+		&:hover,&:active,&:focus{
+			color:$color-red;	
+			background-color:transparent !important;
+		}
+	}
+	.nav-item{
+		h1{
+			letter-spacing:-0.1em;
+			font-family: 'Oswald', sans-serif;
+			font-size:4rem;
+		}
+	}
+
+}
+}

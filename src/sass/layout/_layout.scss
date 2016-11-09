@@ -1,39 +1,3 @@
-nav {
-	margin-top: 0rem !important;
-	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-	z-index:999 !important;
-	//@include box-shadow($cod-gray 0px 3px 4px);
-	font-family:$test-fonte;
-	//letter-spacing:0.07em;
-	//font-weight:bold;
-	background-color:$mine-shaft !important;
-	margin-top:0rem!important;
-	.navbar-brand{
-		color:$porcelain;
-
-	}
-	.nav-link
-	{
-		color:$porcelain;
-		padding:0.7rem;
-		font-size:1.2rem;
-
-		a {
-			&:hover{
-				color:$red;
-			}
-		}
-
-	}
-	.nav-item{
-		h1{
-			letter-spacing:-0.1em;
-			font-family: $title-font;
-			font-size:4rem;
-		}
-	}
-
-}
 
 .container-fluid{
 	padding-right:0rem;
@@ -42,12 +6,7 @@ nav {
 
 .container{
 	background: radial-gradient(circle, white, #f0f0f0);
-	box-shadow: 0px 0px 5px $black;
-}
-
-.row{
-	margin-right:0rem;
-	margin-left:0rem;
+	box-shadow: 0px 0px 5px $color-black;
 }
 
 .input-form{
@@ -64,7 +23,7 @@ nav {
 	
 }
 .card-title{
-	font-family:$test-font3;
+	font-family:fonts(title);
 
 }
 
@@ -101,7 +60,7 @@ transition: all 0.5s ease-in-out;
 }
 
 .cv-bottom{
-	background-color:$mine-shaft;
+	background-color:$color-mine-shaft;
 	height:200px;
 	padding:0;
 	margin-left:-30px;
@@ -112,7 +71,7 @@ transition: all 0.5s ease-in-out;
 }
 .cv-important-text
 {
-	color:$red;
+	color:$color-red;
 }
 
 
@@ -145,13 +104,13 @@ transition: all 0.5s ease-in-out;
 	font-size:1.5em;
 	font-weight:bold;
 	line-height:2em;
-	border-bottom:1px solid $gray-medium;
+	border-bottom:1px solid $color-gray-medium;
 	@include cv-section-separation;
 }
 
 .cv-loading{
 
-	border-top:3px solid $red;
+	border-top:3px solid $color-red;
 	position:absolute;
 	left:0px;
 	top:0px;

@@ -12,15 +12,14 @@ module.exports = {
     entry:{
         app:'./app/main.module.ts',
         vendor: [
-            'jquery',
+            './vendor/index.ts',
             'angular',
             'angular-ui-router',
-            './vendor/vendor.ts'
         ]
 
     },
     output:{
-        path: __dirname + '/dist/js',
+        path: path.join(__dirname,'dist'), 
         publicPath: "/",
         filename: 'app.bundle.js'
     },
@@ -30,7 +29,7 @@ module.exports = {
     module:{
         loaders:[
             {
-                test: /\.scss$/,
+               test: /\.scss$/,
                 exclude: /node_modules/,
                 loader: "style-loader!css-loader!postcss-loader!sass-loader"  
             },
@@ -43,6 +42,14 @@ module.exports = {
                 test: /\.css$/,
                 loader: 'style-loader!css-loader' 
             },
+             {
+                test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: 'url?limit=10000',
+            },
+            {
+                test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
+                loader: 'file',
+            }
 
         ]
     },

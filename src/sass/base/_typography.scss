@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300|Open+Sans+Condensed:300,700|Droid+Sans:400,700|Anton);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Condensed|Passion+One|Russo+One|Economica|Nobile|Jura|Viga|Julius+Sans+One|Megrim|Unica+One|Gruppo|Wire+One);
+
+
+
+
+$title-font:'Oswald', sans-serif;
+
+$font2: 'Droid Sans', sans-serif;
+
+$fontt: 'Wire One', sans-serif;
+
+
+$fontsMaps:(
+    
+    base:      #{'Open Sans Condensed', sans-serif},
+    brand:     'Helvetica',
+    title:     #{'Anton', sans-serif},
+    section:   #{'Ubuntu Condensed', sans-serif},
+    menu:      #{'Unica One', cursive}
+    
+);
+
+@function fonts($font, $family: "base") {
+  @return map-get($fontsMaps,$font);
+}

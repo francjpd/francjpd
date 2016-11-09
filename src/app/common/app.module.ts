@@ -1,7 +1,5 @@
 import angular = require('angular');
 
-import {app} from './app.component';
-
 
 
 export default (()=>{
@@ -9,7 +7,7 @@ export default (()=>{
     angular.module('common',[
         'ui.router'
     ])
-    .component('app',app)
+
     .config(($stateProvider:any)=>{
              
         $stateProvider

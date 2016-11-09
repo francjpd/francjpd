@@ -8,9 +8,10 @@
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true,
+    "suppressImplicitAnyIndexErrors": false,
     "allowSyntheticDefaultImports":true,
-    "types" : ["node","angular","jquery"]
+    "noImplicitUseStrict":true,
+    "types" : ["angular","jquery","webpack-env","webpack","bootstrap"]
   },
   "include": [
       "src/js/**/*"

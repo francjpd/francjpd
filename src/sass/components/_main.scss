@@ -1,0 +1,38 @@
+.cv-main-container{
+	
+
+	background:{
+		//image:image-url("mainBG.jpg");
+		position:0em -5.56em;
+		repeat:no-repeat;
+
+	};
+}
+
+
+.cv-col-centered
+{
+	float: none;
+	margin: 0 auto;
+}
+
+.cv-brand-fjp {
+	font-size:2.4em;
+	
+}
+.cv-brand-fsd{
+	font-size: 2em;
+	margin-left:3px;
+}
+.cv-company{
+	max-width:20rem!important;
+	&:hover{
+			cursor:pointer;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+			margin-top: -5px;
+			transition: all 0.2s ease-in-out !important;
+
+		}
+
+}
+
