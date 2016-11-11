@@ -20,3 +20,4 @@ export default (()=>{
 }) ();
 
 import './header/header.module';
+import './footer/footer.module';

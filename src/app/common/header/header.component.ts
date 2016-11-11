@@ -1,6 +1,6 @@
 /// <reference types="angular" />
 
-let template:any  = require('ngtemplate!html!./header.html');
+let template:any  = require('ngTemplate!html!./header.html');
 
  export default class HeaderComponent  implements ng.IComponentOptions{
      public templateUrl:any = template;
