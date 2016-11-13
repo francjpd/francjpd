@@ -1,10 +1,22 @@
+/// <reference types="angular" />
+
 import AppCtrl from './app.controller';
-var templateUrl = require('ngtemplate!html!./app.html');
 
-export const app = {
+var template: any = require('ngtemplate!html!./app.html');
 
-            templateUrl:templateUrl,
-            controller:AppCtrl
+export default class AppComponent implements ng.IComponentOptions{
+        templateUrl = template;
+        controller =  AppCtrl;
+
+        public static $inject:Array<string> = [''];
+        constructor(){
+
+        }  
+
+        public static getInstance():ng.IComponentOptions{
+            return new AppComponent();
+        }
+
 
     }
 

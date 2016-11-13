@@ -1,5 +1,7 @@
 import angular = require('angular');
 
+import appComponent from './app.component'; 
+import appConfig from './app.config';
 
 
 export default (()=>{
@@ -8,14 +10,9 @@ export default (()=>{
         'ui.router'
     ])
 
-    .config(($stateProvider:any)=>{
-             
-        $stateProvider
-            .state('app',{
-                url:'/app',
-                component:'app'
-            })
-    });
+    .component('app',appComponent.getInstance())
+    .config(appConfig);
+  
     
 }) ();
 

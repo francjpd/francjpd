@@ -7,7 +7,7 @@ export default ( ()=>{
     
     angular
         .module('common')
-        .component('footer',footer.getInstance());
+        .component('footer',footer.getInstance())
 
 
 
