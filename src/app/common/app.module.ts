@@ -5,14 +5,12 @@ import appConfig from './app.config';
 
 
 export default (()=>{
-    
     angular.module('common',[
         'ui.router'
     ])
-
+    
     .component('app',appComponent.getInstance())
     .config(appConfig);
-  
     
 }) ();
 

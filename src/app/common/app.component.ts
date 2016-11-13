@@ -2,7 +2,7 @@
 
 import AppCtrl from './app.controller';
 
-var template: any = require('ngtemplate!html!./app.html');
+let template:any = require('ngTemplate!html!./app.html');
 
 export default class AppComponent implements ng.IComponentOptions{
         templateUrl = template;
@@ -10,7 +10,9 @@ export default class AppComponent implements ng.IComponentOptions{
 
         public static $inject:Array<string> = [''];
         constructor(){
-
+            console.log('component instanced');
+            console.log(template);
+            
         }  
 
         public static getInstance():ng.IComponentOptions{
