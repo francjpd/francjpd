@@ -9,10 +9,7 @@ export default class AppComponent implements ng.IComponentOptions{
         controller =  AppCtrl;
 
         public static $inject:Array<string> = [''];
-        constructor(){
-            console.log('component instanced');
-            console.log(template);
-            
+        constructor(){            
         }  
 
         public static getInstance():ng.IComponentOptions{

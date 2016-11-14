@@ -3,29 +3,27 @@ import uirouter from 'angular-ui-router';
 
 require('./../sass/styles'); 
 
-import {MainComponent} from './main.component';
+import mainComponent from './main.component';
 
 import  './common/app.module';
 
 import MainConfig from './main.config';
 
+let bundle:Array<string> = ['ui.router',
+							'common'];
 
+interface MenuItem {
+	menu:string;
+}
 
-const  app  = angular
-	.module(
-		"cv.main",
-		[
-			'ui.router',
-			'common'
-			
-		])
+const  app:ng.IModule  = angular
+	.module("cv.main",bundle)
 	.config(MainConfig)
-	
-	.component('main',MainComponent)
-	
+	.component('main',mainComponent.getInstance())
 	.factory('currentMenu', ['', function(){
 	
-	var menuItems = [{menu:"about"},{menu:"experience"},{menu:"technology"},{menu:"studies"}];
+	
+	var menuItems: Array<MenuItem> = [{menu:"about"},{menu:"experience"},{menu:"technology"},{menu:"studies"}];
 	return function (){
 		
 	};

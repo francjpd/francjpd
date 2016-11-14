@@ -1,15 +1,22 @@
 /// <reference types="angular" />
+/// <reference types="angular-ui-router"/>
 
 import angular = require('angular');
 
 import MainCtrl from './main.controller';
 
-var templateUrl:any = require('ngtemplate!html!./main.html');
+let template:any = require('ngtemplate!html!./main.html');
 
-export const MainComponent = {
-           templateUrl:templateUrl,
-            controller:MainCtrl
+export default class MainComponent implements ng.IComponentOptions  {
+           templateUrl:any = template;
+           
 
+           static $inject:Array<string> = [''];
+           constructor(){}
+
+           public static getInstance():ng.IComponentOptions{
+               return new MainComponent();
+           }
     }
        
 
