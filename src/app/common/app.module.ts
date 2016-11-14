@@ -14,5 +14,6 @@ export default (()=>{
     
 }) ();
 
+import './menu/menu.module';
 import './header/header.module';
 import './footer/footer.module';

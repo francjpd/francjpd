@@ -8,9 +8,9 @@ let template:any = require('ngTemplate!html!./app.html');
 
 export default class AppState implements angular.ui.IState {
 
-        templateUrl = template;
+        template = '<app></app>';
         url:string ='/';
-       // component:string  ='app';
+        component:string  ='app';
 
         constructor(){
         }
