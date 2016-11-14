@@ -10,7 +10,7 @@ let template:any = require('ngtemplate!html!./main.html');
 export default class MainComponent implements ng.IComponentOptions  {
            templateUrl:any = template;
            
-
+           controller :any =  MainCtrl;
            static $inject:Array<string> = [''];
            constructor(){}
 
