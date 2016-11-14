@@ -6,6 +6,8 @@ export default class MainCtrl implements ng.IComponentController {
     static $inject:Array<string> = ['$scope'];
     constructor($scope:ng.IScope){
         $scope.$on('$stateChangeSucess',(event:ng.IAngularEvent,toState:ng.ui.IState)=>{
+            console.log('stateChange');
+            
             console.log(toState);
         });
     }

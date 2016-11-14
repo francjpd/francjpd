@@ -6,6 +6,12 @@ import appState from "./app.state";
 export default function AppConfig($stateProvider:angular.ui.IStateProvider){
 
         $stateProvider
-            .state('app',appState.getInstance());
+            .state('app',appState.getInstance())
+            .state('tuPutaMadre',{
+                url:'/tu',
+                component:'app'
+        
+            })
+            
 
 }
