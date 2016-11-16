@@ -2,7 +2,7 @@
 
 import angular = require('angular');
 
-let bundle:Array<string> = ['sparks'];
+let bundle:Array<string> = [];
 
 const poleoModule:ng.IModule = angular
         .module('poleo.effect',bundle);

@@ -10,10 +10,6 @@
     "suppressImplicitAnyIndexErrors": false,
     "allowSyntheticDefaultImports":true,
     "noImplicitUseStrict":true,
-    "typeroots": [
-            // add path to @types
-            "../node_modules/@types"
-         ],
     "types" : ["es6-shim","angular","angular-ui-router","jquery","webpack-env","webpack","bootstrap"]
   },
   "include": [
