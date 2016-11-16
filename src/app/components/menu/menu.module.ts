@@ -5,6 +5,6 @@ import menuComponent from './menu.component';
 export default (()=>{
     'use strict';
     angular
-        .module('common')
+        .module('components')
         .component('menu',menuComponent.getInstance());
 })();

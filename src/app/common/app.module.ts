@@ -6,7 +6,8 @@ import appConfig from './app.config';
 
 export default (()=>{
     angular.module('common',[
-        'ui.router'
+        'ui.router',
+        'components'
     ])
     
     .component('app',appComponent.getInstance())
@@ -14,6 +15,5 @@ export default (()=>{
     
 }) ();
 
-import './menu/menu.module';
 import './header/header.module';
 import './footer/footer.module';
