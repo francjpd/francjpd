@@ -6,12 +6,14 @@ require('./../sass/styles');
 import mainComponent from './main.component';
 
 import  './common/app.module';
-import 
+
+import './components/components.module';
 
 import MainConfig from './main.config';
 
 let bundle:Array<string> = ['ui.router',
-							'common'];
+							'common',
+							'components'];
 
 interface MenuItem {
 	menu:string;
