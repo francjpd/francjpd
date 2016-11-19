@@ -10,17 +10,9 @@ interface IParticle {
     color:string;
     width:number;
     height:number;
+	number:number;
 }
 
-interface ISparkComponentBinding {
-	container:string;
-    maxSize:string;
-    minSize:string;
-    color:string;
-    width:string;
-    height:string;
-	isAbsolute:string;
-}
 
 interface ISparkComponentController extends IParticle {
 //	initParticle():void;
@@ -37,6 +29,7 @@ export default class SparksController implements ISparkComponentController {
     color:string;
     width:number;
     height:number;
+	number:[number];
 
     constructor(){
         this.maxSize=0;
@@ -44,6 +37,7 @@ export default class SparksController implements ISparkComponentController {
         this.color= '#FFFFFF';
         this.width= 0;
         this.height= 0;
+		this.number=[1,2,3];
     }
 
     private $onInit():void{

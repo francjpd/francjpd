@@ -8,6 +8,6 @@ let bundle:Array<string> = ['sparks'];
 export default (()=>{
     angular
             .module('poleo.effect')
-            .component(sparksComponent.NAME, sparksComponent) ;
+            .component(sparksComponent.NAME, sparksComponent.getInstance()) ;
 })(); 
     

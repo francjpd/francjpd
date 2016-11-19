@@ -3,7 +3,6 @@ import angular = require('angular');
 import appComponent from './app.component'; 
 import appConfig from './app.config';
 
-
 export default (()=>{
     angular.module('common',[
         'ui.router',

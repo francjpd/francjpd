@@ -6,14 +6,20 @@ import SparkController from './sparks.controller';
 
 let template:any = require('!ngTemplate!html!./sparks.html');
 
-interface ISparkComponentBinding {
-	container:string;
+
+class SparkComponentBinding{
+    container:string;
     maxSize:string;
     minSize:string;
     color:string;
     width:string;
     height:string;
 	isAbsolute:string;
+    number:string;
+
+    constructor(){
+        this.number = '<';
+    }
 }
 
 export default class SparksComponent implements ng.IComponentOptions {
@@ -33,6 +39,7 @@ export default class SparksComponent implements ng.IComponentOptions {
     constructor(){
 		this.controller = SparkController;
 		this.templateUrl  = template;
+        this.binding = SparkComponentBinding;
 	}
 
 }
