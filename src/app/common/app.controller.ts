@@ -1,9 +1,16 @@
-export default class AppCtrl implements ng.IController{
-    
+/// <reference types="angular"/>
+
+export default class AppCtrl{
+    sparkNumber:number;
     public static $inject:Array<string> = ['$scope'];
     
     constructor($scope:any){
-        console.log('nothing');
         
+     
+        
+    }
+
+    private $onInit():void{
+      
     }
 }

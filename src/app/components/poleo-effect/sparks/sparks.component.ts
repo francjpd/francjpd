@@ -18,17 +18,21 @@ class SparkComponentBinding{
     number:string;
 
     constructor(){
-        this.number = '<';
+        this.number = '=';
+        this.color = '<';
     }
+static getInstance():SparkComponentBinding {
+    return new SparkComponentBinding();
 }
 
 export default class SparksComponent implements ng.IComponentOptions {
 
-	binding:any;
+	bindings:any;
 	controller:any;
 	templateUrl:any;
+    require:any;
 
-    static NAME:string = "sparks"
+    static NAME:string = "sparks";
 
     static getInstance():ng.IComponentOptions {
         return new SparksComponent();
@@ -37,9 +41,11 @@ export default class SparksComponent implements ng.IComponentOptions {
 
 
     constructor(){
+        
 		this.controller = SparkController;
 		this.templateUrl  = template;
-        this.binding = SparkComponentBinding;
+        this.bindings = SparkComponentBinding.getInstance();
+        console.log(this);
 	}
 
 }

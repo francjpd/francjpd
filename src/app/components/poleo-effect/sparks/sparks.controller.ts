@@ -29,23 +29,28 @@ export default class SparksController implements ISparkComponentController {
     color:string;
     width:number;
     height:number;
-	number:[number];
+	number:number;
+	sparks:Array<string>;
 
     constructor(){
-        this.maxSize=0;
-        this.minSize=0
-        this.color= '#FFFFFF';
-        this.width= 0;
-        this.height= 0;
-		this.number=[1,2,3];
+	
+
+
+		console.log(this);
+		
+		
+		//this.number=[1,2,3];
     }
 
     private $onInit():void{
+		if(this.number > 0 ){
+			this.sparks = new Array<string>(this.number)
 
+		}
     }
 
     private $onChanges():void{
-
+		console.log(this.number);
     }
 
 	getRandomValue(max:number,min:number = 0):number

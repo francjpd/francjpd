@@ -1,12 +1,17 @@
 /// <reference types="angular" />
 
+import headerCtrl from './header.controller';
 let template:any = require('ngTemplate!html!./header.html');
 
  export default class HeaderComponent  implements ng.IComponentOptions{
-     public templateUrl:any = template;
+    templateUrl:any;
+     controller:any;
 
      static $inject:Array<string> = [''];
-     constructor(){}
+     constructor(){
+         this.templateUrl = template;
+         this.controller = headerCtrl ;
+     }
 
 
      static getInstance(): ng.IComponentOptions{
