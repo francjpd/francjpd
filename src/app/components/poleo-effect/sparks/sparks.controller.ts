@@ -2,55 +2,45 @@
 
 import angular = require('angular');
 
-let template:any = require('!ngTemplate!html!./sparks.html');
-
-interface IParticle {
-    maxSize:number;
-    minSize:number;
+interface ISparks {
+    maxS:number;
+    minS:number;
     color:string;
-    width:number;
-    height:number;
 	number:number;
 }
 
 
-interface ISparkComponentController extends IParticle {
-//	initParticle():void;
+interface ISparksComponentController extends ISparks {
 	getRandomValue(max:number,min:number):number;
 	playIndefinitely(particle:HTMLElement,width:number,height:number):void;
 }
 
 
+export default class SparksController implements ISparksComponentController {
 
-export default class SparksController implements ISparkComponentController {
-
-    maxSize:number;
-    minSize:number;
+    maxS:number;
+    minS:number;
     color:string;
-    width:number;
-    height:number;
 	number:number;
-	sparks:Array<string>;
+	sparks:Array<any>;
 
-    constructor(){
-	
+    constructor(){}
 
-
-		console.log(this);
-		
-		
-		//this.number=[1,2,3];
-    }
-
-    private $onInit():void{
-		if(this.number > 0 ){
-			this.sparks = new Array<string>(this.number)
-
-		}
-    }
+    private $onInit():void{}
 
     private $onChanges():void{
-		console.log(this.number);
+		console.log('changed');
+		
+		if(this.number > 0 ){
+			this.sparks = new Array<any>();
+			for(let i = 0 ; i <this.number ; i++){
+				this.sparks.push({	id:i,
+									color:'white',
+									width:this.getRandomValue(this.maxS,this.minS),
+									height:this.getRandomValue(this.maxS,this.minS),
+								}); 				
+			}
+		}
     }
 
 	getRandomValue(max:number,min:number = 0):number
@@ -68,11 +58,7 @@ export default class SparksController implements ISparkComponentController {
 				result = min;
 			}
 		}
-
-
 		return result;
-
-		
 	};
 
     playIndefinitely(particle:HTMLElement,width:number,height:number):void		
@@ -85,6 +71,4 @@ export default class SparksController implements ISparkComponentController {
 			this.play(particle,width,height);
 		});
 	}
-
-
 }

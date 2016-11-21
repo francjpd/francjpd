@@ -1,11 +1,11 @@
-<div    class="fe-particle",
-        ng-repeat="spark in $ctrl.sparks"
-        width='$ctrl.width',
-        height='$ctrl.height',
+<div    class="fe-sparks",
+        
         number="$ctrl.number",
         max-size="$ctrl.maxSize",
         min-size="$ctrl.minSize",
-        opacity="$ctrl.opacity",
         color="$ctrl.color">
-        .
+        <spark ng-repeat="spark in $ctrl.sparks"
+        style="width:{{spark.width}};
+                height:{{spark.height}};
+                color:{{spark.color}};"> <div>
 </div>  

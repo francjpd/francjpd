@@ -5,24 +5,28 @@ import angular = require('angular');
 import SparkController from './sparks.controller';
 
 let template:any = require('!ngTemplate!html!./sparks.html');
+ 
+class SparksComponentBinding{
 
-
-class SparkComponentBinding{
-    container:string;
+    private static instance:any;
     maxSize:string;
     minSize:string;
     color:string;
-    width:string;
-    height:string;
-	isAbsolute:string;
     number:string;
 
     constructor(){
-        this.number = '=';
+        this.number = '<';
         this.color = '<';
+        this.maxSize = '<';
+        this.minSize = '<';
     }
-static getInstance():SparkComponentBinding {
-    return new SparkComponentBinding();
+
+    static getInstance():SparksComponentBinding {
+        if(!angular.isDefined(this.instance)){
+            this.instance = new SparksComponentBinding(); 
+        }
+        return new SparksComponentBinding();    
+    }
 }
 
 export default class SparksComponent implements ng.IComponentOptions {
@@ -44,7 +48,7 @@ export default class SparksComponent implements ng.IComponentOptions {
         
 		this.controller = SparkController;
 		this.templateUrl  = template;
-        this.bindings = SparkComponentBinding.getInstance();
+        this.bindings = SparksComponentBinding.getInstance();
         console.log(this);
 	}
 
