@@ -1,4 +1,9 @@
-sparks,.sparks{
+spark,.spark{
     position:absolute;
-    
+}
+
+sparks,.sparks{
+    display:block; 
+    width:100%;
+    height:400px;
 }

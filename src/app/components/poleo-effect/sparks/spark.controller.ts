@@ -9,6 +9,7 @@ interface ISpark {
     width:number;
     height:number;
     color:string;
+    sparkId:string;
 }
 
 
@@ -22,12 +23,37 @@ export default class SparksController implements ISparkComponentController {
     width:number;
     height:number;
     color:string;
-
+    sparkId:string;
+    
+private style:any;
+    
+    static getInstance():SparksController{
+        return new SparksController();
+    }
     constructor(){}
 
-    private $onInit():void{}
+    private $postLink():void{       
+        
+        let element = $("[spark-id='spark"+this.sparkId+"'");
+        console.log(this);
+        console.log(element);
+        
+        
+    }
+    
+    private $onChanges():void{
 
-    private $onChanges():void{}
+        this.style = {
+            width:this.width+'px',
+            height:this.height+'px',
+            color:this.color
+        };
+
+
+        
+        
+
+    }
 
 	private getRandomValue(max:number,min:number = 0):number
 	{
@@ -52,4 +78,5 @@ export default class SparksController implements ISparkComponentController {
 			this.play(particle,width,height);
 		});
 	}
+    
 }

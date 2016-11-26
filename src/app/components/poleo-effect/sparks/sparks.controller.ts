@@ -7,6 +7,7 @@ interface ISparks {
     minS:number;
     color:string;
 	number:number;
+	id:string;
 }
 
 
@@ -23,22 +24,32 @@ export default class SparksController implements ISparksComponentController {
     color:string;
 	number:number;
 	sparks:Array<any>;
-
+	id:string;
+	parentContainer:JQuery;
+	
     constructor(){}
 
-    private $onInit():void{}
+    private $onInit():void{
+		this.number = 0 ;
+		this.maxS = 0 ;
+		this.minS = 1;
+		this.color = "white";
+		this.parentContainer = angular.element(this.id).parent();
+
+		
+	}
 
     private $onChanges():void{
-		console.log('changed');
 		
-		if(this.number > 0 ){
+		if(this.number > 0  && this.maxS > 0){
 			this.sparks = new Array<any>();
 			for(let i = 0 ; i <this.number ; i++){
 				this.sparks.push({	id:i,
-									color:'white',
+									color:this.color,
 									width:this.getRandomValue(this.maxS,this.minS),
 									height:this.getRandomValue(this.maxS,this.minS),
 								}); 				
+				
 			}
 		}
     }

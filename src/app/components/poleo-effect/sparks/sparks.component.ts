@@ -9,16 +9,17 @@ let template:any = require('!ngTemplate!html!./sparks.html');
 class SparksComponentBinding{
 
     private static instance:any;
-    maxSize:string;
-    minSize:string;
+    maxS:string;
+    minS:string;
     color:string;
     number:string;
-
+    id:string;
     constructor(){
         this.number = '<';
-        this.color = '<';
-        this.maxSize = '<';
-        this.minSize = '<';
+        this.color = '@';
+        this.maxS = '@';
+        this.minS = '@';
+        this.id = '<';
     }
 
     static getInstance():SparksComponentBinding {
@@ -49,7 +50,6 @@ export default class SparksComponent implements ng.IComponentOptions {
 		this.controller = SparkController;
 		this.templateUrl  = template;
         this.bindings = SparksComponentBinding.getInstance();
-        console.log(this);
 	}
 
 }

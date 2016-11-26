@@ -4,7 +4,7 @@ import angular = require('angular');
 
 import SparkController from './spark.controller';
 
-let template:any = require('!ngTemplate!html!./sparks.html');
+let template:any = require('!ngTemplate!html!./spark.html');
 
 
 class SparkComponentBinding{
@@ -13,12 +13,14 @@ class SparkComponentBinding{
     color:string;
     width:string;
     height:string;
+    sparkId:string;
 
     static $inject = [''];
     constructor(){
-        this.color = '<';
-        this.width = '<';
-        this.height = '<';
+        this.color = '@';
+        this.width = '@';
+        this.height = '@';
+        this.sparkId = '@';
     }
 
      static getInstance():SparkComponentBinding {
@@ -49,7 +51,6 @@ export default class SparkComponent implements ng.IComponentOptions {
 		this.controller = SparkController;
 		this.templateUrl  = template;
         this.bindings = SparkComponentBinding.getInstance();
-        console.log(this);
 	}
 
 }
