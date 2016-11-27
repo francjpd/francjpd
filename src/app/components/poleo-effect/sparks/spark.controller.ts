@@ -18,19 +18,26 @@ interface ISparkComponentController extends ISpark {
 }
 
 
-export default class SparksController implements ISparkComponentController {
+export default class SparkController implements ISparkComponentController {
 
     width:number;
     height:number;
     color:string;
     sparkId:string;
+    element:HTMLElement;
     
 private style:any;
     
-    static getInstance():SparksController{
-        return new SparksController();
+    static getInstance():Sparksontroller{
+        return new SparkController();
     }
-    constructor(){}
+
+    public static $inject:Array<string> = ['$element'];
+    constructor($element:HTMLElement){
+        this.element = $element;
+        console.log($element);
+        
+    }
 
     private $postLink():void{       
         

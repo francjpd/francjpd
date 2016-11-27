@@ -25,18 +25,20 @@ export default class SparksController implements ISparksComponentController {
 	number:number;
 	sparks:Array<any>;
 	id:string;
-	parentContainer:JQuery;
+	parentContainer:HTMLElement;
 	
-    constructor(){}
+	static $inject:string = ['$element'];
+    constructor($element:HTMLElement){
+		this.parentContainer = $element;
+	
+		
+	}
 
     private $onInit():void{
 		this.number = 0 ;
 		this.maxS = 0 ;
 		this.minS = 1;
-		this.color = "white";
-		this.parentContainer = angular.element(this.id).parent();
-
-		
+		this.color = "white";		
 	}
 
     private $onChanges():void{
