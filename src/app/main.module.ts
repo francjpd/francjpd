@@ -1,5 +1,6 @@
 import angular =  require('angular'); // since it has not default export!
 import uirouter from 'angular-ui-router';
+import 'angular-animate';
 
 require('./../sass/styles'); 
 
@@ -12,6 +13,7 @@ import './components/components.module';
 import MainConfig from './main.config';
 
 let bundle:Array<string> = ['ui.router',
+							'ngAnimate',
 							'common',
 							'components'];
 

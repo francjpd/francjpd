@@ -14,37 +14,39 @@ interface ISpark {
 
 
 interface ISparkComponentController extends ISpark {
-	playIndefinitely(particle:HTMLElement,width:number,height:number):void;
+	playIndefinitely():void;
 }
 
 
 export default class SparkController implements ISparkComponentController {
 
+    private static  EVENT:string = 'SparkFinishedPlaying';
     width:number;
     height:number;
     color:string;
     sparkId:string;
     element:HTMLElement;
+    scope:ng.IScope;
     
 private style:any;
     
-    static getInstance():Sparksontroller{
-        return new SparkController();
+    static getInstance($element,$scope):SparkController{
+        return new SparkController($element,$scope);
     }
 
-    public static $inject:Array<string> = ['$element'];
-    constructor($element:HTMLElement){
+    public static $inject:Array<string> = ['$element','$scope'];
+    constructor($element:HTMLElement,$scope:ng.IScope){
         this.element = $element;
-        console.log($element);
+        this.scope = $scope;
         
     }
 
     private $postLink():void{       
-        
-        let element = $("[spark-id='spark"+this.sparkId+"'");
-        console.log(this);
-        console.log(element);
-        
+            
+    this.scope.$on(SparkController.EVENT,($event)=>{
+        $event.stopPropagation();
+        this.playIndefinitely();
+    })
         
     }
     
@@ -55,6 +57,8 @@ private style:any;
             height:this.height+'px',
             color:this.color
         };
+
+        this.playIndefinitely();
 
 
         
@@ -75,14 +79,14 @@ private style:any;
 		return result;
 	};
 
-    playIndefinitely(particle:HTMLElement,width:number,height:number):void		
+    playIndefinitely():void		
 	{
-		angular.element(particle).animate(
+		angular.element(this.element.find('div'))[0].animate(
 		{
-			top: this.getRandomValue(height)-20,
-			left: this.getRandomValue(width)-20,
+			top: this.getRandomValue(100)-5+ '%',
+			left: this.getRandomValue(100)-5 + '%',
 		},8000+this.getRandomValue(6000),function(){
-			this.play(particle,width,height);
+            this.scope.emit(SparkController.EVENT);
 		});
 	}
     

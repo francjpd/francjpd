@@ -25,10 +25,10 @@ export default class SparksController implements ISparksComponentController {
 	number:number;
 	sparks:Array<any>;
 	id:string;
-	parentContainer:HTMLElement;
+	parentContainer:any;
 	
-	static $inject:string = ['$element'];
-    constructor($element:HTMLElement){
+	static $inject:Array<String> = ['$element'];
+    constructor(public $element:any){
 		this.parentContainer = $element;
 	
 		
