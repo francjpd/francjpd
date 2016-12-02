@@ -8,6 +8,9 @@
                 <a class="dropdown-item" href="#main">Myself</a>
             </div>
         </li>
+        <li class="nav-item"  ng-repeat="item in $ctrl.items">
+            <a class="nav-link" uiref="item.url"><i class="fa {{item.icon}}"> </i> {{item.text}}</a>
+        </li>
         <li class="nav-item" cv-menu-id="experience">
             <a class="nav-link" href="experience"><i class="fa fa-signal "> </i> Experience</a>
         </li>

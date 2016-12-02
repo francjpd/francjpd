@@ -14,8 +14,7 @@ class SparkComponentBinding{
     width:string;
     height:string;
     sparkId:string;
-
-    static $inject = [''];
+    
     constructor(){
         this.color = '@';
         this.width = '@';

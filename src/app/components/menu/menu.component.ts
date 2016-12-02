@@ -1,27 +1,35 @@
 /// <reference types="angular"/>
 /// <reference types="angular-ui-router" />
 
-interface MenuBinding {
-    
+class MenuBinding {
+   items:string; 
+
+   constructor(){
+       this.items = '<';
+   }
+
+   static getInstance():MenuBinding {
+        return new MenuBinding();
+   }
 }
 
-interface MenuItem {
+export interface MenuItem {
 	text:string;
     url: string;
+    icon:string;
 }
 
 let template = require('ngTemplate!html!./menu.html');
 
 export default class MenuComponent implements ng.IComponentOptions{
     
-    templateUrl:any = template;
-    
-    bindings:any = {
-        menuItems : '=?'
-    }
+    templateUrl:any;
+    bindings:any
+
     
     constructor(){
-        console.log('menu');
+        this.templateUrl = template;
+        this.bindings = MenuBinding.getInstance();
         
     }
 

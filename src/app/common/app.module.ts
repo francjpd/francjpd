@@ -15,4 +15,5 @@ export default (()=>{
 }) ();
 
 import './header/header.module';
+import '../components/menu.module';
 import './footer/footer.module';

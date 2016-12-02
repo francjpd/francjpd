@@ -23,15 +23,6 @@ const  app:ng.IModule  = angular
 	.module("cv.main",bundle)
 	.config(MainConfig)
 	.component('main',mainComponent.getInstance())
-	.factory('currentMenu', ['', function(){
-	
-	
-	var menuItems: Array<MenuItem> = [{menu:"about"},{menu:"experience"},{menu:"technology"},{menu:"studies"}];
-	return function (){
-		
-	};
-}]);
-
 
 //angular.module("cv.main",['ngRoute','fox.scrollReveal','sticky','cv.resume','cv.datastore','cv.core','cv.fjpd.animation.directives']);
 
