@@ -45,7 +45,7 @@ module.exports = {
                 loader: 'style-loader!css-loader' 
             },
              {
-                test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9]*)?$/,
                 loader: 'url?limit=10000',
             },
             {

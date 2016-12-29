@@ -4,3 +4,4 @@
 require("materialize-loader");
 
 import 'materialize-css';
+import 'mdi/css/materialdesignicons.min.css';
