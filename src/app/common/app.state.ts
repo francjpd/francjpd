@@ -5,11 +5,14 @@ import appComponent from './app.component';
 
 export default class AppState implements angular.ui.IState {
 
-        url:string ='/';
-        component:string = appComponent.NAME;
+        url:string;
+        component:string;
+        name:string;
+
         constructor(){
-            console.log(this);
-            
+            this.url ='/';
+            this.name = 'app';
+            this.component = appComponent.NAME;   
         }
 
         

@@ -7,4 +7,6 @@ export default (()=>{
     angular
         .module('components')
         .component('menu',menuComponent.getInstance());
+
 })();
+

@@ -45,7 +45,7 @@ private style:any;
             
     this.scope.$on(SparkController.EVENT,($event)=>{
         $event.stopPropagation();
-        this.playIndefinitely();
+     //   this.playIndefinitely();
     })
         
     }
@@ -58,7 +58,7 @@ private style:any;
             color:this.color
         };
 
-        this.playIndefinitely();
+      //  this.playIndefinitely();
 
 
         
@@ -79,15 +79,15 @@ private style:any;
 		return result;
 	};
 
-    playIndefinitely():void		
-	{
-		angular.element(this.element.find('div'))[0].animate(
-		{
-			top: this.getRandomValue(100)-5+ '%',
-			left: this.getRandomValue(100)-5 + '%',
-		},8000+this.getRandomValue(6000),function(){
-            this.scope.emit(SparkController.EVENT);
-		});
-	}
+    // playIndefinitely():void		
+	// {
+	// 	angular.element(this.element.find('div'))[0].animate(
+	// 	{
+	// 		top: this.getRandomValue(100)-5+ '%',
+	// 		left: this.getRandomValue(100)-5 + '%',
+	// 	},8000+this.getRandomValue(6000),function(){
+    //         this.scope.emit(SparkController.EVENT);
+	// 	});
+	// }
     
 }

@@ -1,9 +1,6 @@
 /// <reference types="webpack" />
 /// <reference types="webpack-env" />
-/// <reference types="bootstrap" />
 
+require("materialize-loader");
 
-import 'jquery';
-//require.context('bootstrap/dist/',true,/\.(js|eot|woff2|woff|ttf|svg)$/);
-
-import 'bootstrap/dist/css/bootstrap.css';
+import 'materialize-css';

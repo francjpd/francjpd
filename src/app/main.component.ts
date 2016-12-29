@@ -8,11 +8,15 @@ import MainCtrl from './main.controller';
 let template:any = require('ngtemplate!html!./main.html');
 
 export default class MainComponent implements ng.IComponentOptions  {
-           templateUrl:any = template;
+           templateUrl:any;
            
-           controller :any =  MainCtrl;
+           controller:any;
            static $inject:Array<string> = [''];
-           constructor(){}
+           constructor(){
+
+               this.templateUrl = template;
+               this.controller  = MainCtrl;
+           }
 
            public static getInstance():ng.IComponentOptions{
                return new MainComponent();

@@ -4,7 +4,8 @@ header,.header,[header]{
     margin-bottom:30px;
     .cv-main-header{
         position:relative;
-        padding-top:100px;
+        padding-top:50px;
+        padding-bottom:50px;
     }
     .cv-main {
         width:350px;
@@ -20,9 +21,12 @@ header,.header,[header]{
     .header__first-section{
         h1{
             font-family: 'Oswald', sans-serif;
-            letter-spacing:-.6rem;
-            font-size:8rem;
-            line-height:1em;
+            letter-spacing: -.3rem;
+            font-size: 5rem;
+            line-height: 1em;
+            margin-bottom: -15px;
+            margin-left: 18px;
+            margin-top: 0;
             small{
                 font-family:'Unica One';
                 letter-spacing:-.3rem;
@@ -33,11 +37,10 @@ header,.header,[header]{
     }
 
     .header__third-section{
-        margin:-15px;
         background-color: #373a3c;
         color:$color-red;
         h1{
-            letter-spacing:-2.2rem;
+            letter-spacing:-1.6rem;
             font-weight:bold;
             font-size:10rem;
             line-height:6rem;
@@ -50,7 +53,7 @@ header,.header,[header]{
         }
 
        &__sparks{
-           height:400px;
+         //  height:400px;
        }
     }
 

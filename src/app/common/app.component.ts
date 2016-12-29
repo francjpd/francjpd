@@ -13,7 +13,6 @@ export default class AppComponent implements ng.IComponentOptions{
 
         public static $inject:Array<string> = [''];
         constructor(){ 
-            console.log(this);
             this.controller = AppCtrl;
             this.templateUrl = template;
                        

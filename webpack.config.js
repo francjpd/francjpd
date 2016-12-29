@@ -12,7 +12,9 @@ module.exports = {
     entry:{
         app:'./app/main.module.ts',
         vendor: [
+            'jquery',
             './vendor/index.ts',
+            'materialize-css',
             'angular',
             'angular-ui-router',
         ]

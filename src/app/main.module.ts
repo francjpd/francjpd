@@ -10,12 +10,16 @@ import  './common/app.module';
 
 import './components/components.module';
 
+import'./resume/resume.module';
+
 import MainConfig from './main.config';
+
 
 let bundle:Array<string> = ['ui.router',
 							'ngAnimate',
 							'common',
-							'components'];
+							'components',
+							'cv.main.resume'];
 
 interface MenuItem {
 	menu:string;
@@ -29,7 +33,7 @@ const  app:ng.IModule  = angular
 //angular.module("cv.main",['ngRoute','fox.scrollReveal','sticky','cv.resume','cv.datastore','cv.core','cv.fjpd.animation.directives']);
 
 angular.element(document).ready(function(){
-
+	
 	return angular.bootstrap(document,[app.name]);
 })
 
