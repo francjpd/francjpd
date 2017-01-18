@@ -3,12 +3,11 @@
 import angular = require('angular');
 import footer from './footer.component';
 
-export default ( ()=>{
+const commonModule:string = 
     
     angular
         .module('common')
         .component('footer',footer.getInstance())
+        .name;
 
 
-
-}) ();

@@ -1,16 +1,16 @@
- <ul class="dropdown-content" id="menu" ng-if="item.items" ng-repeat="item in $ctrl.items" >
+ <ul class="dropdown-content " id="menu" ng-if="item.items" ng-repeat="item in $ctrl.items" >
     <li ng-repeat="subitem in item.items" href="#">
         <a ui-sref="#!" >{{subitem.text}}</a>
     </li>
  </ul>
 <nav>
-    <div class="nav-wrapper">   
+    <div class="nav-wrapper grey darken-3">   
         <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li ng-repeat="item in $ctrl.items">
                 <a  ui-sref="{{item.url}}"  ng-if="!item.items">
                     {{item.text}}
                 </a>
-                <a  class="dropdown-button btn waves-effect"
+                <a  class="dropdown-button btn waves-effect red lighten-1"
                     ng-if="item.items"
                     ui-sref="#!"
                     data-activates="menu"

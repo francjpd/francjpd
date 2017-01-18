@@ -5,13 +5,16 @@ import resumeComponent from './resume.component';
 
 import ResumeConfig from './resume.config';
 
-let bundle:Array<string> =  ['ui.router'];
+let deps:Array<string> =  ['ui.router'];
 
-const resumeModule:ng.IModule = 
+const resumeModule:string = 
         angular
-            .module('cv.main.resume',bundle)
+            .module('resume',deps)
             .component('resume',resumeComponent.getInstance())
-            .config(ResumeConfig);
+            .config(ResumeConfig)
+            .name;
 
 export default resumeModule;
 
+
+import './experience/experience.module';

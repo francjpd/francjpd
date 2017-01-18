@@ -10,6 +10,7 @@ export default (()=>{
     angular
         .module('common')
         .component('header',header.getInstance())
+        .name;
 
 }) ();
 

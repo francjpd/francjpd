@@ -1,0 +1,33 @@
+<div class="experience">
+    <div class="wrapper right-text">
+        <h4 class="center fp-text weight-300">Hard-working and enthusiastic Software Engineer</h4>
+        <h5 class="center fp-text weight-200">Experience in technology-led software companies</h5>
+
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m4 l4" ng-repeat="exp in $ctrl.experience">
+                    <div class="card">
+                        <div class="card-image ">
+                            <img src="{{exp.image}}">
+                            <span class="card-title fp-text weight-800 grey darken-3">{{exp.company}}</span>
+                            <a class="btn-floating  activator halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-title fp-text weight-400  grey-text text-darken-4">{{exp.role}}</p>
+                            <div class="section">
+                                <p>{{exp.roleDesc}}</p>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">The Company<i class="material-icons right">close</i></span>
+                            <div class="section">
+                                <p>{{exp.companyDesc}}</p>
+                            </div>
+                            <pq><a href="{{exp.website}}">Find out more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

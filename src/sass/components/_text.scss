@@ -1,0 +1,7 @@
+.fp-text {
+    @for $i from 1 through 8 {
+        &.weight-#{$i}00 {
+            font-weight:#{$i}00;
+        }
+    }
+}

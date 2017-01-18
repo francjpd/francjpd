@@ -15,8 +15,6 @@ export default class ResumeState implements angular.ui.IState {
         this.name = 'resume';
         this.url = 'resume';
         this.component = resumeComponent.NAME;
-        this.parent = 'app';
-        // this.template = 'hola;'
     }
     static getInstance():angular.ui.IState{
         return new ResumeState();

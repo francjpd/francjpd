@@ -3,10 +3,11 @@
 import angular = require('angular');
 
 
-let bundle:Array<string> = [];
+let deps:Array<string> = [];
 
-const poleoModule:ng.IModule = angular
-        .module('poleo.effect',bundle);
+const poleoModule:string = angular
+        .module('poleo.effect',deps)
+        .name;
 
 //import './sparks/sparks.module';
 export default poleoModule;

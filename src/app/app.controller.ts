@@ -6,7 +6,8 @@ export default class AppCtrl{
     public static $inject:Array<string> = ['$scope','$state'];
     
     constructor($scope:any,$state:ng.ui.IStateService){
-                
+        console.log($state);
+        
         $state.go('resume');
         
     }

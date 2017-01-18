@@ -2,13 +2,23 @@
 
 import angular = require('angular');
 
-let bundle:Array<string> = ['poleo.effect'];
+import resumeModule from './resume/resume.module';
+import poleoEffectModule from './poleo-effect/poleoeffect.module'; 
+import menuModule from './menu/menu.module';
+import loadingModule from './loading/loading.module';
 
-const components:ng.IModule = angular
-        .module('components',bundle);
 
-import './poleo-effect/poleoeffect.module'; 
-import './menu/menu.module';
+let bundle:Array<string> = [poleoEffectModule,
+                                resumeModule,
+                                menuModule,
+                                loadingModule];
+
+const components:string = angular
+        .module('components',bundle)
+        .name;
+
+// import './poleo-effect/poleoeffect.module'; 
+// import './menu/menu.module';
 
 export default components;
 

@@ -1,23 +1,10 @@
 @import "../../../sass/base.scss";
 
 header,.header,[header]{
-    margin-bottom:30px;
     .cv-main-header{
         position:relative;
-        padding-top:50px;
-        padding-bottom:50px;
     }
-    .cv-main {
-        width:350px;
-        height:10em;
-    }
-    .brand {
-        color: $color-red;
-        letter-spacing:-0.3em;
-        font-weight:bold;
-        font-family:Arial,Helvetica;
 
-    }
     .header__first-section{
         h1{
             font-family: 'Oswald', sans-serif;
@@ -31,14 +18,11 @@ header,.header,[header]{
                 font-family:'Unica One';
                 letter-spacing:-.3rem;
                 font-size:5rem;
-                color:$color-red;
             }
         }
     }
 
     .header__third-section{
-        background-color: #373a3c;
-        color:$color-red;
         h1{
             letter-spacing:-1.6rem;
             font-weight:bold;
@@ -55,6 +39,11 @@ header,.header,[header]{
        &__sparks{
          //  height:400px;
        }
+
+       &__brand{
+           height:400px;
+           width:100%;
+       }
     }
 
     h2{
@@ -64,37 +53,6 @@ header,.header,[header]{
         padding-left:0.2em;
     }
 
-    nav {
-	border-radius:0 !important;
-	z-index:999 !important;
-	font-family:fonts(menu);
-	background-color:#373a3c;
-	margin-top: 0!important;
-	margin-left:-15px;
-	margin-right:-15px;
-    margin-bottom:0;
-	.navbar-brand{
-		color:$color-porcelain;
+  
 
-	}
-	.nav-link
-	{
-		color:$color-porcelain;
-		font-size:1.8rem;
-
-
-		&:hover,&:active,&:focus{
-			color:$color-red;	
-			background-color:transparent !important;
-		}
-	}
-	.nav-item{
-		h1{
-			letter-spacing:-0.1em;
-			font-family: 'Oswald', sans-serif;
-			font-size:4rem;
-		}
-	}
-
-}
 }

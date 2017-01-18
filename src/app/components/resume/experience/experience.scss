@@ -1,0 +1,23 @@
+//@import "../../../sass/base.scss";
+.experience,
+experience {
+    .wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .card-image {
+        .card-title {
+            width: 100%;
+            opacity: .7;
+            margin-bottom: 36px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .btn-floating {
+            float: right;
+            position: absolute;
+            bottom: -19px;
+            right: 30px;
+        }
+    }
+}

@@ -2,11 +2,13 @@ import angular = require('angular');
 
 import menuComponent from './menu.component';
 
-export default (()=>{
-    'use strict';
-    angular
-        .module('components')
-        .component('menu',menuComponent.getInstance());
+let deps:Array<string> = [];
 
-})();
+const menuModule:string = 
+        angular
+            .module('menu',deps)
+            .component('menuBar',menuComponent.getInstance())
+            .name;
 
+
+export default menuModule ;
