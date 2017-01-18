@@ -1,4 +1,16 @@
 .loading,
 loading {
-    //Scss goes here! 
+    position: fixed;
+    display: block;
+    top: -9px;
+    height: 4px;
+    width: 100%;
+    
+    .progress{
+        background-color:#ef5350;
+        .indeterminate{
+            background-color: #bf3936;
+        }
+    }
+    
 }

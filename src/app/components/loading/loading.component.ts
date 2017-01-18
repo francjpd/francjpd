@@ -19,6 +19,9 @@ export default class LoadingComponent implements ng.IComponentOptions{
     constructor(){
         this.templateUrl= template;
         this.controller= LoadingCtrl;
+        this.bindings = {
+            isLoading : '<'
+        }
     }
 
 

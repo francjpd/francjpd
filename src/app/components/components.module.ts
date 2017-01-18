@@ -17,8 +17,5 @@ const components:string = angular
         .module('components',bundle)
         .name;
 
-// import './poleo-effect/poleoeffect.module'; 
-// import './menu/menu.module';
-
 export default components;
 
