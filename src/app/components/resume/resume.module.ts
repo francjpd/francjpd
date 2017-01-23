@@ -18,3 +18,4 @@ export default resumeModule;
 
 
 import './experience/experience.module';
+import './technology/technology.module';
