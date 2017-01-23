@@ -9,5 +9,5 @@ const poleoModule:string = angular
         .module('poleo.effect',deps)
         .name;
 
-//import './sparks/sparks.module';
+import './sparks/sparks.module';
 export default poleoModule;

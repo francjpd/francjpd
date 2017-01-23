@@ -2,15 +2,25 @@
 loading {
     position: fixed;
     display: block;
-    top: -9px;
-    height: 4px;
+    height: 100%;
+    top: 0;
     width: 100%;
-    
-    .progress{
-        background-color:#ef5350;
-        .indeterminate{
-            background-color: #bf3936;
+    z-index: 999;
+    cursor: wait;
+    margin-bottom: 0;
+    .progress {
+        background-color: #ef5350;
+        margin: 0;
+        .indeterminate {
+            background-color: #c3221f
         }
     }
-    
+    &__wait {
+        display: block;
+        position: fixed;
+        top: 4px;
+        background-color: rgba(1, 1, 1, 0.9);
+        height: 100%;
+        width: 100%;
+    }
 }

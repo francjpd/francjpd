@@ -12,8 +12,7 @@ interface ISparks {
 
 
 interface ISparksComponentController extends ISparks {
-	getRandomValue(max:number,min:number):number;
-	playIndefinitely(particle:HTMLElement,width:number,height:number):void;
+
 }
 
 
@@ -74,14 +73,5 @@ export default class SparksController implements ISparksComponentController {
 		return result;
 	};
 
-    playIndefinitely(particle:HTMLElement,width:number,height:number):void		
-	{
-		angular.element(particle).animate(
-		{
-			top: this.getRandomValue(height)-20,
-			left: this.getRandomValue(width)-20,
-		},8000+this.getRandomValue(6000),function(){
-			this.play(particle,width,height);
-		});
-	}
+
 }

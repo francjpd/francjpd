@@ -1,11 +1,13 @@
-spark,.spark{
-    position:absolute;
-    width:100px;
-    height:100px;
+spark,
+.spark {
+    &>div {
+        position: absolute;
+    }
 }
 
-sparks,.sparks{
-    display:block; 
-    width:100%;
-    height:400px;
+sparks,
+.sparks {
+    display: block;
+    width: 100%;
+    height: 100%;
 }

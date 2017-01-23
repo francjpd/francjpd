@@ -8,7 +8,7 @@ let template:any = require('!ngTemplate!html!./sparks.html');
  
 class SparksComponentBinding{
 
-    private static instance:any;
+    private static instance:SparksComponentBinding;
     maxS:string;
     minS:string;
     color:string;
@@ -26,7 +26,7 @@ class SparksComponentBinding{
         if(!angular.isDefined(this.instance)){
             this.instance = new SparksComponentBinding(); 
         }
-        return new SparksComponentBinding();    
+        return this.instance;    
     }
 }
 

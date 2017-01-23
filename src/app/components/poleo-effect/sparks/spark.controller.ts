@@ -14,7 +14,7 @@ interface ISpark {
 
 
 interface ISparkComponentController extends ISpark {
-	playIndefinitely():void;
+//	playIndefinitely():void;
 }
 
 
@@ -45,20 +45,22 @@ private style:any;
             
     this.scope.$on(SparkController.EVENT,($event)=>{
         $event.stopPropagation();
-     //   this.playIndefinitely();
+        this.playIndefinitely();
     })
         
     }
     
     private $onChanges():void{
-
+        console.log(this.width);
         this.style = {
-            width:this.width+'px',
-            height:this.height+'px',
-            color:this.color
+            fontSize:this.height+'px',
+            color:this.color,
+            opacity:(200-this.height)/100
+          
+            
         };
 
-      //  this.playIndefinitely();
+        this.playIndefinitely();
 
 
         
@@ -66,28 +68,25 @@ private style:any;
 
     }
 
-	private getRandomValue(max:number,min:number = 0):number
+	private getRandomValue(maxNumber:number=100):number
 	{
 		var result = 0 ;
 
-        result = Math.ceil(Math.random()*max);
-        if(result < min)
-        {
-            result = min;
-        }
-		
+        result = Math.ceil(Math.random()*maxNumber);
+      
 		return result;
 	};
 
-    // playIndefinitely():void		
-	// {
-	// 	angular.element(this.element.find('div'))[0].animate(
-	// 	{
-	// 		top: this.getRandomValue(100)-5+ '%',
-	// 		left: this.getRandomValue(100)-5 + '%',
-	// 	},8000+this.getRandomValue(6000),function(){
-    //         this.scope.emit(SparkController.EVENT);
-	// 	});
-	// }
+    playIndefinitely():void		
+	{   
+
+        angular.element(this.element).find('div').animate(
+		{
+			top: this.getRandomValue()-5+ '%',
+			left: this.getRandomValue()-5 + '%',
+		},1000+this.getRandomValue(8000),angular.bind(this,function(){
+            this.scope.$emit(SparkController.EVENT);
+        }));
+	}
     
 }
