@@ -1,4 +1,18 @@
 .technology,
 technology {
-    //Scss goes here! 
+    .wrapper {
+        padding: 0 30px;
+        h3 {
+            font-weight: 300;
+        }
+        .row {
+            margin-bottom: 0;
+        }
+        .backend,
+        .framework {
+            .row {
+                opacity: .4;
+            }
+        }
+    }
 }

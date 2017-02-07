@@ -11,6 +11,7 @@ class LoadingBindings {
     isLoading:string;
     constructor(){
         this.isLoading = '<';
+        
     }
     static getInstance():LoadingBindings{
         if(!angular.isDefined(this.instance)){

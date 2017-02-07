@@ -1,0 +1,9 @@
+$shadowMap:( base: 2px 2px 2px rgba(1, 1, 1, .2));
+@function shadows($type: "base") {
+    @return map-get($shadowMap, $type);
+}
+
+$transitionMap:( margin: 300ms margin ease-in);
+@function transitions($type: "margin") {
+    @return map-get($transitionMap, $type);
+}

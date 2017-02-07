@@ -1,23 +1,44 @@
-//@import "../../../sass/base.scss";
+@import "../../../../sass/base.scss";
 .experience,
 experience {
-    .wrapper {
+    >.wrapper {
         padding-left: 30px;
         padding-right: 30px;
-    }
-    .card-image {
-        .card-title {
-            width: 100%;
-            opacity: .7;
-            margin-bottom: 36px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-        }
-        .btn-floating {
-            float: right;
-            position: absolute;
-            bottom: -19px;
-            right: 30px;
+        .content {
+            .total-experience {
+                .wrapper {}
+            }
+            .card {
+                z-index: 1;
+                &:hover {
+                    cursor: pointer;
+                }
+                .card-image {
+                    .card-title {
+                        width: 100%;
+                        opacity: .7;
+                        margin-bottom: 36px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                    }
+                    .btn-floating {
+                        float: right;
+                        position: absolute;
+                        bottom: -19px;
+                        right: 30px;
+                    }
+                }
+            }
+            &.open {
+                .total-experience {
+                    .wrapper {
+                        z-index: 2;
+                    }
+                }
+                .card {
+                    z-index: 3;
+                }
+            }
         }
     }
 }

@@ -1,10 +1,51 @@
-<div class="skills">
-	<div class="row">
-	      <div class="col l4">
-	        <div><i class="fa fa-star fa-lg"></i><i class="fa fa-star fa-lg"></i><i class="fa fa-star fa-lg"></i><i class="fa fa-star-half-o fa-lg"></i><i class="fa fa-star-o fa-lg"></i></div>
-	      </div>
-	      <div class="col l4">
-	       sad
-	      </div>
-	</div>
-</div> 
+<div class="knowledge ">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col l4 m6 s12 frontend">
+                <h3 class="title">Frontend</h3>
+
+                <div class="row" ng-repeat="item in $ctrl.frontend">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="col l5">
+                                <span> {{item.name}}</span>
+                            </div>
+                            <div class="col l7">
+                                <rating value="item.rating"></rating>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 m6 s12 backend">
+                <h3 class="title center">Backend</h3>
+                <p>I have been focusing my career to be a Frontend architect/developer. that is why i want you to focus into the frontend section</p>
+                <div class="row" ng-repeat="item in $ctrl.backend">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="col l5">
+                                <span> {{item.name}}</span>
+                            </div>
+                            <div class="col l7">
+                                <rating value="item.rating"></rating>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 m6 s12 framework">
+                <h3 class="title right">Frameworks</h3>
+                <div class="row" ng-repeat="item in $ctrl.framework">
+                    <div class="col s12">
+                        <div class="row">
+                            <div class="col l5">
+                                <span> {{item.name}}</span>
+                            </div>
+                            <div class="col l7">
+                                <rating value="item.rating"></rating>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

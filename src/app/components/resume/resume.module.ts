@@ -5,6 +5,8 @@ import resumeComponent from './resume.component';
 
 import ResumeConfig from './resume.config';
 
+import resumeService from './resume.service';
+
 let deps:Array<string> =  ['ui.router'];
 
 const resumeModule:string = 
@@ -12,6 +14,7 @@ const resumeModule:string =
             .module('resume',deps)
             .component('resume',resumeComponent.getInstance())
             .config(ResumeConfig)
+            .service('ResumeService',resumeService)
             .name;
 
 export default resumeModule;

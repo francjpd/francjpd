@@ -51,7 +51,6 @@ private style:any;
     }
     
     private $onChanges():void{
-        console.log(this.width);
         this.style = {
             fontSize:this.height+'px',
             color:this.color,

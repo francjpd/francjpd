@@ -8,10 +8,10 @@ let template = require('ngtemplate!html!./technology.template.html');
 
 class technologyComponentBindings{
     private static instance:any;
-    isWorking:string;
+    knowledge:string;
 
     constructor(){
-        this.isWorking = '<';
+        this.knowledge = '<';
     }
 
     static getInstance(): technologyComponentBindings{

@@ -42,8 +42,6 @@ export default class SparksComponent implements ng.IComponentOptions {
     static getInstance():ng.IComponentOptions {
         return new SparksComponent();
     }
-    static $inject:Array<string> = [];
-
 
     constructor(){
         

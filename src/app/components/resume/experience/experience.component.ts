@@ -1,7 +1,7 @@
 /// <reference types="angular"/>
 
 import ExperienceCtrl from './experience.controller';
-import ExperienceService from './experience.service';
+
 
 let template = require('ngtemplate!html!./experience.html');
 
@@ -20,6 +20,9 @@ export default class ExperienceComponent implements ng.IComponentOptions{
     constructor(){
         this.templateUrl= template;
         this.controller= ExperienceCtrl;
+        this.bindings = {
+            experience : '<'
+        }
     }
 
 

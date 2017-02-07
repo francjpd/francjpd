@@ -1,6 +1,9 @@
-knowledge = [{
+import Knowledge from '../../../common/model/knowledge';
+
+
+export const knowledgeModel:Knowledge[] = [{
     type: "frontend",
-    name: "HTML 5 & CSS 3",
+    name: "HTML5 & CSS3",
     rating: 5,
     description: "Been working with these languages since i was 16. Started as a youngster who wanted to create an amazing profile on a famous website.  Using my photoshop & illustrator knowledge  in combination to create a template and then transforming it into a fully working HTML template. People loved my work and started buying my templates and  from that point i wanted this hobbie to be my Career. <br> Nowadays most of my work is confidential and for this reason i created this site, To show my skills.",
     icon: "html5"
@@ -18,14 +21,14 @@ knowledge = [{
     icon: "sass"
 }, {
     type: "frontend",
-    name: "Compass",
+    name: "Materialize",
     rating: 3,
-    description: "My first attempt with this framework was on the SAT WEB project, it was also the first javascript framework i learned. All i can say about it is that is reallystrong and complete framework.  complete enough to be able create an entire Web applicationwithout the need of another. <br>Has used it under SAT WEB, Tasa Variable, MPTRES, BTT  projects as well as a freelancer.",
-    icon: "compass"
+    icon: "compass",
+    description:'na'
 }, {
     type: "frontend",
     name: "Javascript",
-    rating: 5,
+    rating: 4.5,
     description: "Learned this langauge from a really interesting IBM course that lasted 1 year and half. At that moment was not that great. but everything changed once i met libraries and frameworks such as Jquery , Dojo, and now the lastest like Angular and React. My first important step with it was done under the SAT WEB project.<br>It is really great to see how this language has evolved. Fast enough to make Flash almost unexistent.",
     icon: "javascript"
 }, {
@@ -37,7 +40,7 @@ knowledge = [{
 }, {
     type: "frontend",
     name: "Dojo",
-    rating: 4.5,
+    rating: 3,
     description: "My first attempt with this framework was on the SAT WEB project, it was also the first javascript framework i learned. All i can say about it is that is reallystrong and complete framework.  complete enough to be able create an entire Web applicationwithout the need of another. <br>Has used it under SAT WEB, Tasa Variable, MPTRES, BTT  projects as well as a freelancer.",
     icon: "dojo"
 }, {
@@ -130,3 +133,4 @@ knowledge = [{
     rating: 3,
     description: "",
     icon: "bpm"
+}];

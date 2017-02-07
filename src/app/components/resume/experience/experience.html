@@ -5,25 +5,36 @@
 
         <div class="section">
             <div class="row">
-                <div class="col s12 m6 l4" ng-repeat="exp in $ctrl.experience">
-                    <div class="card">
-                        <div class="card-image ">
-                            <img src="{{exp.image}}">
-                            <span class="card-title fp-text weight-800 grey darken-3">{{exp.company}}</span>
-                            <a class="btn-floating  activator halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                        </div>
-                        <div class="card-content">
-                            <p class="card-title fp-text weight-400  grey-text text-darken-4">{{exp.role}}</p>
-                            <div class="section">
-                                <p>{{exp.roleDesc}}</p>
+                <div class="col s12 m6 l4 content" ng-repeat="exp in $ctrl.experience" ng-class="{l12:exp.showExperience}">
+                    <div class="row">
+                        <div class="col " ng-class="{l4:exp.showExperience,l12:!exp.showExperience}">
+                            <div class="card hoverable" ng-click="$ctrl.showExperience(exp,$event)">
+                                <div class="card-image ">
+                                    <img src="{{exp.image}}">
+                                    <span class="card-title fp-text weight-800 grey darken-3">{{exp.company}}</span>
+                                    <a class="btn-floating  activator halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                                </div>
+                                <div class="card-content">
+                                    <p class="card-title fp-text weight-400  grey-text text-darken-4">{{exp.role}}</p>
+                                    <div class="section">
+                                        <p>{{exp.roleDesc}}</p>
+                                    </div>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">The Company<i class="material-icons right">close</i></span>
+                                    <div class="section">
+                                        <p>{{exp.companyDesc}}</p>
+                                    </div>
+                                    <p><a href="{{exp.website}}">Find out more</a></p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">The Company<i class="material-icons right">close</i></span>
-                            <div class="section">
-                                <p>{{exp.companyDesc}}</p>
+                        <div class="col m6 l8" ng-class="{!hide:exp.showExperience} ">
+                            <div class="total-experience ">
+                                <div class="wrapper ">
+                                    <p>{{exp.roleDesc}}</p>
+                                </div>
                             </div>
-                            <pq><a href="{{exp.website}}">Find out more</a></p>
                         </div>
                     </div>
                 </div>

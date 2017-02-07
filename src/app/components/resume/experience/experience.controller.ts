@@ -1,18 +1,24 @@
 ///<reference types="angular"/>
 
-import ExperienceService from './experience.service';
 import Experience from '../../../common/model/experience';
 
 export default class ExperienceCtrl implements ng.IComponentController{
 
-    static $inject:string[] = ['ExperienceService'];
+  
     experience:Experience[];
     
-    constructor(private experienceService:ExperienceService){
+    constructor(){
 
     }
-    $onInit(){
-       this.experience = this.experienceService.getExperience();
-        
+    $onChanges(){
+   
+    
     }
-}
+    showExperience(card,$event):void{
+        card.showExperience = !card.showExperience;
+        console.log($event);
+        console.log( angular.element(event));
+        if($event.target === )
+
+    }
+} 
