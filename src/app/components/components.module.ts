@@ -7,13 +7,15 @@ import poleoEffectModule from './poleo-effect/poleoeffect.module';
 import menuModule from './menu/menu.module';
 import loadingModule from './loading/loading.module';
 import ratingModule from  './rating/rating.module';
+import particlesModule from  './particles/particles.module';
 
 
 let bundle:Array<string> = [poleoEffectModule,
                                 resumeModule,
                                 menuModule,
                                 loadingModule,
-                                ratingModule];
+                                ratingModule,
+                                particlesModule];
 
 const components:string = angular
         .module('components',bundle)

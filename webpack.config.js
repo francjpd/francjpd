@@ -54,12 +54,20 @@ module.exports = {
                 //IMAGE LOADER
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 loader: 'file'
-            }
+            },
+            // {
+            //     test: /\.json$/,
+            //     use: 'json-loader'
+            // },
+            // {
+            //     test: /particles\.js/,
+            //     loader: 'exports?particlesJS=window.particlesJS,pJSDom=window.pJSDom'
+            // }
 
 
         ]
     },
-    postcss: function() {
+    postcss: function () {
         return [
             require('autoprefixer')({ /* ...options */ })
         ]
