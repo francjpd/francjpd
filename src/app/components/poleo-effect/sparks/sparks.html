@@ -1,8 +1,4 @@
-<div    class="fe-sparks">
-        <spark  spark-id="{{'spark' + $index}}"
-                ng-repeat="spark in $ctrl.sparks"
-                width="{{spark.width}}"
-                height="{{spark.height}}"
-                color="{{$ctrl.color}}"> 
-        </spark>
-</div>  
+<div class="fe-sparks">
+    <spark ng-repeat="spark in $ctrl.sparks" width="{{spark.width}}" height="{{spark.height}}" color="{{$ctrl.color}}">
+    </spark>
+</div>

@@ -1,6 +1,7 @@
 
 import angular = require('angular');
 import uirouter from 'angular-ui-router';
+
 import 'angular-animate';
 
 let dependencies:Array<string> = ['ui.router',

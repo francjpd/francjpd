@@ -1,1 +1,0 @@
-var technologyFilter = ['CSS 3', 'HTML 5', 'Javascript', 'Java / j2ee' ,'TIBCO'];

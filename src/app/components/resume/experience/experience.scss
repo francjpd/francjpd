@@ -1,12 +1,22 @@
 @import "../../../../sass/base.scss";
 .experience,
 experience {
+    .ng-hide {
+        opacity: 0;
+    }
+    .ng-hide-remove {
+        transition: 200ms all ease-in;
+    }
     >.wrapper {
         padding-left: 30px;
         padding-right: 30px;
         .content {
             .total-experience {
-                .wrapper {}
+                .wrapper {
+                    .collapsible-body {
+                        padding: 1.4rem;
+                    }
+                }
             }
             .card {
                 z-index: 1;
@@ -31,8 +41,11 @@ experience {
             }
             &.open {
                 .total-experience {
+                    opacity: 1;
                     .wrapper {
+                        display: block;
                         z-index: 2;
+                        transition: opacity 600ms ease-in;
                     }
                 }
                 .card {

@@ -10,6 +10,7 @@ export default  class Experience {
     companyDesc:string;
     role:string;
     roleDesc:string;
-    projects:Array<Project>
+    projects:Array<Project>;
+    hideme:boolean;
 
 }

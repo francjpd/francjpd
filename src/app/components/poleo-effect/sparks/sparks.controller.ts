@@ -34,6 +34,8 @@ export default class SparksController implements ISparksComponentController {
 	}
 
     private $onInit():void{
+		console.log('second');
+		
 		this.number = 0 ;
 		this.maxS = 0 ;
 		this.minS = 1;
@@ -41,14 +43,15 @@ export default class SparksController implements ISparksComponentController {
 	}
 
     private $onChanges():void{
-		
+	console.log('first');
+	
 		if(this.number > 0  && this.maxS > 0){
 			this.sparks = new Array<any>();
 			for(let i = 0 ; i <this.number ; i++){
 				this.sparks.push({	id:i,
 									color:this.color,
 									width:this.getRandomValue(this.maxS,this.minS),
-									height:this.getRandomValue(this.maxS,this.minS),
+									height:this.getRandomValue(this.maxS,this.minS)
 								}); 				
 				
 			}

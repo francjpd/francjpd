@@ -9,14 +9,14 @@ const ExtractedTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     context: path.join(__dirname, 'src'),
     entry: {
-        app: './app/app.module.ts',
         vendor: [
             'jquery',
             './vendor/index.ts',
             'materialize-css',
             'angular',
-            'angular-ui-router',
-        ]
+            'angular-ui-router'
+        ],
+        app: './app/app.module.ts'
 
     },
     output: {
@@ -68,10 +68,10 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js"),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.ProvidePlugin({
-                $: "jquery",
-                jQuery: "jquery",
-                "window.jQuery": "jquery",
-                "root.jQuery": "jquery",
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery",
+            "root.jQuery": "jquery",
         })
     ],
     devtool: 'source-map',
