@@ -31,9 +31,3 @@
   <img width="10" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" height="20" alt="tailwindcss logo"  />
 </div>
-
-###
-
-<img src="https://raw.githubusercontent.com/francjpd/francjpd/output/snake.svg" alt="Snake animation" />
-
-###
