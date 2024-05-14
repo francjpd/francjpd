@@ -1,6 +1,6 @@
+<img height="100%" width="100%" alt="Bottom" src="header.svg"/>
 <h2 align="right">console.log('Hello world👋')</h2>
-
-###
+  
 
 <p align="left">My name is Francisco but you can call me Fran! As a Software Engineer, I’ve been ‘introducing’ bugs since 2011! <br><br> My real passion lies in engineering captivating digital experiences. Versatile and adaptive, I thrive in various settings, shifting effortlessly from hands-on coding to spearheading dynamic teams.</p>
 
@@ -31,3 +31,4 @@
   <img width="10" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg" height="20" alt="tailwindcss logo"  />
 </div>
+<img height="100%" width="100%" alt="Bottom" src="footer.svg"/>
