@@ -1,0 +1,30 @@
+<svg width="500" height="130" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <style>
+            p {
+                color: black;
+                font-size: 1rem;
+                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+                "
+
+            }
+
+            @media (prefers-color-scheme: dark) {
+                p {
+                    color: white;
+                }
+            }
+        </style>
+        <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:1rem;">
+            <p align="left">
+                My name is <span style="font-size:1rem; color:#2cbef8; font-weight:200;">Francisco</span>
+                but you can call me <span style="font-size:1.5rem; color:#2cbef8; font-weight:600;"> Fran! </span> As a
+                Software Engineer, I’ve been 'introducing' bugs since 2011!
+            </p>
+            <p style="display:block;">My
+                real passion
+                lies in engineering captivating digital experiences. Versatile and adaptive, I thrive in various
+                settings, shifting effortlessly from hands-on coding to spearheading dynamic teams.</p>
+        </div>
+    </foreignObject>
+</svg>

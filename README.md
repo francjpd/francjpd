@@ -1,5 +1,6 @@
 <img height="100%" width="100%" alt="Bottom" src="header.svg"/>
-<p align="left">My name is <span style="font-size:20px; color:#2cbef8; font-weight:200;">Francisco</span> but you can call me <span style="font-size:40px; color:#2cbef8; font-weight:600;"> Fran! </span> As a Software Engineer, I’ve been 'introducing' bugs since 2011! <br><br> My real passion lies in engineering captivating digital experiences. Versatile and adaptive, I thrive in various settings, shifting effortlessly from hands-on coding to spearheading dynamic teams.</p>
+
+<img width="100%" height="100%" alt="Welcome" src="welcome.svg"/>
 
 ###
 
