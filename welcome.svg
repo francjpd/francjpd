@@ -1,12 +1,10 @@
-<svg width="500" height="190" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="220" xmlns="http://www.w3.org/2000/svg">
     <!-- fjp -->
     <foreignObject width="100%" height="100%">
         <style>
             p,
             h3 {
                 font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-                "
-
             }
 
             p,
@@ -19,6 +17,20 @@
                 p {
                     color: white;
                 }
+            }
+
+            .separator {
+                display: block;
+                border-bottom: 1px solid #2cbef8;
+                width: 40%;
+                margin: auto;
+                height: 1px;
+            }
+
+            .subtitle {
+                color: #2cbef8;
+                font-weight: 200;
+                text-align: center;
             }
         </style>
         <!-- fpoleo -->
@@ -33,7 +45,8 @@
                 lies in engineering captivating digital experiences. Versatile and adaptive, I thrive in various
                 settings, shifting effortlessly from hands-on coding to spearheading dynamic teams.</p>
         </section>
-        <h3 xmlns="http://www.w3.org/1999/xhtml" style="color:#2cbef8; font-weight:200; text-align:center;">I code with
+        <div class="separator" xmlns="http://www.w3.org/1999/xhtml"></div>
+        <h3 xmlns="http://www.w3.org/1999/xhtml" class="subtitle">I code with
         </h3>
     </foreignObject>
     <!-- Francjpd -->
