@@ -1,12 +1,7 @@
+<!-- fpoleo -->
 <img height="100%" width="100%" alt="Bottom" src="header.svg"/>
 
 <img width="100%" height="100%" alt="Welcome" src="welcome.svg"/>
-
-###
-
-<h3 align="left">I code with</h3>
-
-###
 
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
@@ -30,3 +25,4 @@
   <img src="tailwind.svg" height="30" width="30" alt="tailwindcss logo"  />
 </div>
 <img height="100%" width="100%" alt="Bottom" src="footer.svg"/>
+<!-- Francjpd -->

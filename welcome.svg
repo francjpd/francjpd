@@ -1,12 +1,18 @@
-<svg width="500" height="130" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="190" xmlns="http://www.w3.org/2000/svg">
+    <!-- fjp -->
     <foreignObject width="100%" height="100%">
         <style>
-            p {
-                color: black;
-                font-size: 1rem;
+            p,
+            h3 {
                 font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
                 "
 
+            }
+
+            p,
+            h3 {
+                color: black;
+                font-size: 1rem;
             }
 
             @media (prefers-color-scheme: dark) {
@@ -15,7 +21,8 @@
                 }
             }
         </style>
-        <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:1rem;">
+        <!-- fpoleo -->
+        <section xmlns="http://www.w3.org/1999/xhtml" style="font-size:1rem;">
             <p align="left">
                 My name is <span style="font-size:1rem; color:#2cbef8; font-weight:200;">Francisco</span>
                 but you can call me <span style="font-size:1.5rem; color:#2cbef8; font-weight:600;"> Fran! </span> As a
@@ -25,6 +32,9 @@
                 real passion
                 lies in engineering captivating digital experiences. Versatile and adaptive, I thrive in various
                 settings, shifting effortlessly from hands-on coding to spearheading dynamic teams.</p>
-        </div>
+        </section>
+        <h3 xmlns="http://www.w3.org/1999/xhtml" style="color:#2cbef8; font-weight:200; text-align:center;">I code with
+        </h3>
     </foreignObject>
+    <!-- Francjpd -->
 </svg>
