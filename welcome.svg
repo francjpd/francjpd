@@ -1,4 +1,4 @@
-<svg width="500" height="220" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="240" xmlns="http://www.w3.org/2000/svg">
     <!-- fjp -->
     <foreignObject width="100%" height="100%">
         <style>
@@ -6,14 +6,16 @@
             h3 {
                 font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
             }
+            p,span {
+               font-size: .8rem;
+            }
 
-            p,
             h3 {
                 color: black;
                 font-size: 1rem;
             }
 
-            @media (prefers-color-scheme: dark) {
+            @media (prefers-color-scheme: dark) {:
                 p {
                     color: white;
                 }
@@ -34,12 +36,13 @@
             }
         </style>
         <!-- fpoleo -->
-        <section xmlns="http://www.w3.org/1999/xhtml" style="font-size:1rem;">
+        <section xmlns="http://www.w3.org/1999/xhtml" >
             <p align="left">
-                My name is <span style="font-size:1rem; color:#2cbef8; font-weight:200;">Francisco</span>
-                but you can call me <span style="font-size:1.5rem; color:#2cbef8; font-weight:600;"> Fran! </span> As a
-                Software Engineer, I’ve been 'introducing' bugs since 2011!
+                My name is <span style="color:#2cbef8; font-weight:200;">Francisco</span>
+                but you can call me <span style="color:#2cbef8; font-weight:400;"> Fran! </span> As a
+                 <span style="font-size:1rem; color:#2cbef8; font-weight:600;"> Software Engineer</span>, I’ve been 'introducing' bugs since 2011!
             </p>
+            <p> Lately, I have been working on my fundamentals! Aka:   <span style="font-size:1rem; color:#2cbef8; font-weight:200;">Data structures and Algorithms along with System designs</span> (not to confuse with Design Systems! 🤣). You can check my progression by looking at the Algorithmns public repo I have 😊. </p>
             <p style="display:block;">My
                 real passion
                 lies in engineering captivating digital experiences. Versatile and adaptive, I thrive in various
