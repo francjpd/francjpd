@@ -9,7 +9,7 @@
             }
 
             p, span {
-               font-size: .75rem;
+               font-size: .70rem;
             }
 
             h3  {
@@ -38,13 +38,13 @@
             }
         </style>
         <!-- fpoleo -->
-        <section xmlns="http://www.w3.org/1999/xhtml" style="font-size:1rem;" >
+        <section xmlns="http://www.w3.org/1999/xhtml">
             <p align="left">
                 My name is <span style="color:#2cbef8; font-weight:200;">Francisco</span>
                 but you can call me <span style="color:#2cbef8; font-weight:400;"> Fran! </span> As a
-                 <span style="font-size:1rem; color:#2cbef8; font-weight:600;"> Software Engineer</span>, I’ve been 'introducing' bugs since 2011!
+                 <span style="font-size:0.9rem; color:#2cbef8; font-weight:600;"> Software Engineer</span>, I’ve been 'introducing' bugs since 2011!
             </p>
-            <p> Lately, I have been working on my fundamentals! Aka:   <span style="font-size:1rem; color:#2cbef8; font-weight:200;">Data structures and Algorithms along with System designs</span> (not to confuse with Design Systems! 🤣). You can check my progression by looking at the Algorithms public repo I have 😊. </p>
+            <p> Lately, I have been working on my fundamentals! Aka:   <span style="font-size:0.9rem; color:#2cbef8; font-weight:200;">Data structures and Algorithms along with System designs</span> (not to confuse with Design Systems! 🤣). You can check my progression by looking at the Algorithms public repo I have 😊. </p>
             <p style="display:block;">My
                 real passion
                 lies in engineering captivating digital experiences. Versatile and adaptive, I thrive in various
