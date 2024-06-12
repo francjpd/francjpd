@@ -19,7 +19,7 @@
 
             @media (prefers-color-scheme: dark) {
                 p,span, h3 {
-                    color: white;
+                    color: #F5F5F5;
                 }
             }
 

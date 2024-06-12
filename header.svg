@@ -80,7 +80,7 @@
 
     @media (prefers-color-scheme: dark) {
       #text {
-        fill: white;
+        fill: #F5F5F5;
       }
     }
   </style>
@@ -89,9 +89,9 @@
     <filter id="anim">
       <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
       <feColorMatrix in="blur" mode="matrix" values="
-              1 0 0 0 0  
-              0 1 0 0 0  
-              0 0 1 0 0  
+              1 0 0 0 0
+              0 1 0 0 0
+              0 0 1 0 0
               0 0 0 13 -9" result="anim" />
       <xfeBlend in="SourceGraphic" in2="anim" />
     </filter>
