@@ -1,9 +1,8 @@
-<svg width="500" height="240" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="157" xmlns="http://www.w3.org/2000/svg">
     <!-- fjp -->
     <foreignObject width="100%" height="100%">
         <style>
-            p,
-            h3 {
+            p {
                 font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
                 color: #202525;
             }
@@ -12,29 +11,10 @@
                font-size: .70rem;
             }
 
-            h3  {
-                color: #202525black;
-                font-size: 1rem;
-            }
-
             @media (prefers-color-scheme: dark) {
-                p,span, h3 {
+                p,span {
                     color: #F5F5F5;
                 }
-            }
-
-            .separator {
-                display: block;
-                border-bottom: 1px solid #2cbef8;
-                width: 40%;
-                margin: auto;
-                height: 1px;
-            }
-
-            .subtitle {
-                color: #2cbef8;
-                font-weight: 200;
-                text-align: center;
             }
         </style>
         <!-- fpoleo -->
@@ -44,15 +24,9 @@
                 but you can call me <span style="color:#2cbef8; font-weight:400;"> Fran! </span> As a
                  <span style="font-size:0.9rem; color:#2cbef8; font-weight:600;"> Software Engineer</span>, I’ve been 'introducing' bugs since 2011!
             </p>
-            <p> Lately, I have been working on my fundamentals! Aka:   <span style="font-size:0.9rem; color:#2cbef8; font-weight:200;">Data structures and Algorithms along with System designs</span> (not to confuse with Design Systems! 🤣). You can check my progression by looking at the Algorithms public repo I have 😊. </p>
-            <p style="display:block;">My
-                real passion
-                lies in engineering captivating digital experiences. Versatile and adaptive, I thrive in various
-                settings, shifting effortlessly from hands-on coding to spearheading dynamic teams.</p>
+            <p>After years across frontend and architecture, I’ve moved into <span style="font-size:0.9rem; color:#2cbef8; font-weight:200;">applied AI</span>, working hands-on with coding agents. I run a small parallel fleet of them with shared project memory and automated checks, and I’ve shipped a couple of self-initiated agentic proofs of concept in my current role.</p>
+            <p>When I’m not at the day job, I’m learning the AI-engineering basics — LLM APIs, RAG, evaluation, agentic workflows and MCP — and tinkering with open source side projects like <span style="font-size:0.9rem; color:#2cbef8; font-weight:200;">broadmand and framer</span>.</p>
         </section>
-        <div class="separator" xmlns="http://www.w3.org/1999/xhtml"></div>
-        <h3 xmlns="http://www.w3.org/1999/xhtml" class="subtitle">I code with
-        </h3>
     </foreignObject>
     <!-- Francjpd -->
 </svg>
