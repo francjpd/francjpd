@@ -1,4 +1,4 @@
-<svg width="500" height="142" xmlns="http://www.w3.org/2000/svg">
+<svg width="500" height="153" xmlns="http://www.w3.org/2000/svg">
     <!-- fjp -->
     <foreignObject width="100%" height="100%">
         <style>
@@ -24,11 +24,8 @@
                 but you can call me <span style="color:#2cbef8; font-weight:400;"> Fran! </span> As a
                  <span style="font-size:0.9rem; color:#2cbef8; font-weight:600;"> Software Engineer</span>, I’ve been 'introducing' bugs since 2011!
             </p>
-            <p> Lately, I have been working on my fundamentals! Aka:   <span style="font-size:0.9rem; color:#2cbef8; font-weight:200;">Data structures and Algorithms along with System designs</span> (not to confuse with Design Systems! 🤣). You can check my progression by looking at the Algorithms public repo I have 😊. </p>
-            <p style="display:block;">My
-                real passion
-                lies in engineering captivating digital experiences. Versatile and adaptive, I thrive in various
-                settings, shifting effortlessly from hands-on coding to spearheading dynamic teams.</p>
+            <p><span style="font-size:0.9rem; color:#2cbef8; font-weight:200;">AI / GenAI engineering</span>: LLM APIs (Gemini/Vertex), enterprise RAG &amp; retrieval, evaluation &amp; grounding, agentic workflows &amp; MCP, GCP deployment, guardrails.</p>
+            <p>Software engineer with broad, strong engineering experience across frontend and architecture, now moving into <span style="font-size:0.9rem; color:#2cbef8; font-weight:200;">applied AI and AI engineering</span>. I work hands-on with coding agents, from early Antigravity experiments to continuous, parallel multi-agent development: coordinated agents with persistent project memory and automated validation across repositories.</p>
         </section>
     </foreignObject>
     <!-- Francjpd -->
